@@ -14,8 +14,13 @@
     </style>
   </head>
   <body>
-    <h1>Pesquisa sobre Investimentos</h1>
+    <h1 style="text-align: center; margin-top: 5%; margin-bottom: 3%">
+      Pesquisa sobre Investimentos
+    </h1>
     <form class="formulario">
+      <label for="idade">1. Qual o seu nome?</label><br />
+      <input type="text" id="nome" name="nome" required /><br /><br />
+
       <label for="idade">1. Qual é a sua idade?</label><br />
       <input type="number" id="idade" name="idade" required /><br /><br />
 
@@ -40,6 +45,10 @@
         value="renda_fixa"
       />
       <label for="renda_fixa">Renda Fixa</label><br />
+      <input type="checkbox" id="etf" name="investimentos" value="etf" />
+      <label for="etf">ETF</label><br />
+      <input type="checkbox" id="fii" name="investimentos" value="fii" />
+      <label for="etf">FII</label><br />
       <input
         type="checkbox"
         id="criptomoedas"
@@ -77,7 +86,7 @@
         id="expectativa"
         name="expectativa"
         rows="4"
-        cols="50"
+        cols="80"
         required
       ></textarea
       ><br /><br />
