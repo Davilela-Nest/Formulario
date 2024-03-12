@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Pesquisa sobre Investimentos</title>
+    <style>
+      .formulario {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        border: 1px solid #000;
+        border-radius: 15px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pesquisa sobre Investimentos</h1>
+    <form class="formulario">
+      <label for="idade">1. Qual é a sua idade?</label><br />
+      <input type="number" id="idade" name="idade" required /><br /><br />
+
+      <label for="genero">2. Qual é o seu gênero?</label><br />
+      <select id="genero" name="genero" required>
+        <option value="">Selecione...</option>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        <option value="outro">Outro</option></select
+      ><br /><br />
+
+      <label
+        >3. Quais tipos de investimentos você já possui? (Selecione todas as
+        opções aplicáveis)</label
+      ><br />
+      <input type="checkbox" id="acoes" name="investimentos" value="acoes" />
+      <label for="acoes">Ações</label><br />
+      <input
+        type="checkbox"
+        id="renda_fixa"
+        name="investimentos"
+        value="renda_fixa"
+      />
+      <label for="renda_fixa">Renda Fixa</label><br />
+      <input
+        type="checkbox"
+        id="criptomoedas"
+        name="investimentos"
+        value="criptomoedas"
+      />
+      <label for="criptomoedas">Criptomoedas</label><br />
+      <input
+        type="checkbox"
+        id="imoveis"
+        name="investimentos"
+        value="imoveis"
+      />
+      <label for="imoveis">Investimentos Imobiliários</label><br /><br />
+
+      <label>4. Qual é o seu nível de experiência em investimentos?</label
+      ><br />
+      <input type="radio" id="iniciante" name="experiencia" value="iniciante" />
+      <label for="iniciante">Iniciante</label><br />
+      <input
+        type="radio"
+        id="intermediario"
+        name="experiencia"
+        value="intermediario"
+      />
+      <label for="intermediario">Intermediário</label><br />
+      <input type="radio" id="avancado" name="experiencia" value="avancado" />
+      <label for="avancado">Avançado</label><br /><br />
+
+      <label for="expectativa"
+        >5. Qual é a sua principal expectativa em relação aos
+        investimentos?</label
+      ><br />
+      <textarea
+        id="expectativa"
+        name="expectativa"
+        rows="4"
+        cols="50"
+        required
+      ></textarea
+      ><br /><br />
+      <div style="text-align: center">
+        <button>Enviar</button>
+      </div>
+    </form>
+  </body>
+</html>
