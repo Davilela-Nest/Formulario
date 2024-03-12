@@ -3,29 +3,69 @@
   <head>
     <title>Pesquisa sobre Investimentos</title>
     <style>
+      body {
+        font-family: sans-serif;
+        background-color: #ededed;
+        margin: 3%;
+      }
       .formulario {
+        background-color: white;
         width: 50%;
         margin-left: 25%;
         margin-right: 25%;
-        border: 1px solid #000;
+        border: 1px solid #dadce0;
         border-radius: 15px;
         padding: 20px;
+      }
+      input {
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #dadce0;
+      }
+      textarea {
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #dadce0;
+      }
+      select {
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #dadce0;
       }
     </style>
   </head>
   <body>
-    <h1 style="text-align: center; margin-top: 5%; margin-bottom: 3%">
+    <h1
+      style="
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        font-size: 34px;
+      "
+    >
       Pesquisa sobre Investimentos
     </h1>
     <form class="formulario">
       <label for="idade">1. Qual o seu nome?</label><br />
-      <input type="text" id="nome" name="nome" required /><br /><br />
+      <input
+        type="text"
+        id="nome"
+        name="nome"
+        required
+        style="width: 50%"
+      /><br /><br />
 
-      <label for="idade">1. Qual é a sua idade?</label><br />
-      <input type="number" id="idade" name="idade" required /><br /><br />
+      <label for="idade">2. Qual é a sua idade?</label><br />
+      <input
+        type="number"
+        id="idade"
+        name="idade"
+        required
+        style="width: 7%"
+      /><br /><br />
 
-      <label for="genero">2. Qual é o seu gênero?</label><br />
-      <select id="genero" name="genero" required>
+      <label for="genero">3. Qual é o seu gênero?</label><br />
+      <select style="margin-top: 1%" id="genero" name="genero" required>
         <option value="">Selecione...</option>
         <option value="masculino">Masculino</option>
         <option value="feminino">Feminino</option>
@@ -33,7 +73,7 @@
       ><br /><br />
 
       <label
-        >3. Quais tipos de investimentos você já possui? (Selecione todas as
+        >4. Quais tipos de investimentos você já possui? (Selecione todas as
         opções aplicáveis)</label
       ><br />
       <input type="checkbox" id="acoes" name="investimentos" value="acoes" />
@@ -64,7 +104,7 @@
       />
       <label for="imoveis">Investimentos Imobiliários</label><br /><br />
 
-      <label>4. Qual é o seu nível de experiência em investimentos?</label
+      <label>5. Qual é o seu nível de experiência em investimentos?</label
       ><br />
       <input type="radio" id="iniciante" name="experiencia" value="iniciante" />
       <label for="iniciante">Iniciante</label><br />
@@ -79,7 +119,7 @@
       <label for="avancado">Avançado</label><br /><br />
 
       <label for="expectativa"
-        >5. Qual é a sua principal expectativa em relação aos
+        >6. Qual é a sua principal expectativa em relação aos
         investimentos?</label
       ><br />
       <textarea
@@ -88,8 +128,11 @@
         rows="4"
         cols="80"
         required
-      ></textarea
-      ><br /><br />
+      ></textarea>
+      <br /><br />
+      <label for="imagem">7. Selecione uma foto sua:</label><br />
+      <input type="file" id="imagem" name="imagem" accept="image/*" /><br />
+      <br />
       <div style="text-align: center">
         <button>Enviar</button>
       </div>
